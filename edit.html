@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Edit Blog</h1>
+    <a href="index.html">← Back to Home</a>
+  </header>
+
+  <main>
+    <form id="edit-blog-form">
+      <input type="text" id="edit-title" required />
+      <textarea id="edit-content" required></textarea>
+      <button type="submit">Update Blog</button>
+    </form>
+  </main>
+
+  <script src="blog.js"></script>
+  <script>
+    loadEditForm();
+    document.getElementById('edit-blog-form').addEventListener('submit', updateBlog);
+  </script>
+</body>
+</html>

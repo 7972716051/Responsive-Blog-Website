@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f6fa;
+  color: #2f3640;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #273c75;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header a {
+  background-color: #44bd32;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+header a:hover {
+  background-color: #4cd137;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.blog:hover {
+  transform: translateY(-3px);
+}
+
+.blog h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog p {
+  color: #57606f;
+}
+
+.blog a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+  color: #0097e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #273c75;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #192a56;
+}
+
+#blog-view h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#blog-view p {
+  font-size: 1.1rem;
+  color: #353b48;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
